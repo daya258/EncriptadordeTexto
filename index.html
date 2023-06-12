@@ -2,68 +2,72 @@
 
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleshett" href="styles.css">
-    <link href="https: //fonts-googleapis.com/css2?family=Inter:wgt@200;300;400&display=swap" rel="styleshett">
-    <title>Encriptador de Texto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+        <title>Encriptador challenge</title>
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="/imagenes/logo.jpg" alt="logo">
-    </header>
+    <body>
 
-    <main>
-        <section class="seccion-1">
-            <div class="container">
-                <div class="encriptar">
-                    <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
-                        placeholder="Ingresa el texto aquí"></textarea>
+        <header>
+            <img class="logo" src="/imagenes/Logo.svg" alt="logo">
+        </header>
+
+        <main>
+
+            <section class="seccion1">
+
+                <div class="contenedorcajatexto">
+                    <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
                 </div>
-            
+
                 <div class="alerta">
-                    <img src="/imagenes/alerta.jpg" alt="alerta">
+                    <img src="Imagenes/alerta.svg" alt="alerta"> 
+                    <p>  Solo letras minúsculas y sin acentos </p>
                 </div>
-                
-                <div class="terminos">
-                    <p>Soló letras minusculas y sin acéntos</p>
-                </div>
-        
-                <div class="botones">
-                    <input type="button" class="btn-encriptar" value="Encriptar" onclick="encriptar()">
-                    <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
-                </div>
-            </div>
-        </section>
-            
-        <section class="seccion-2">
-            <div class="imagen-imagen">
-                <img src="/imagenes/muñeco.jpg" alt="muñeco">
-            </div> 
-            <div class="parrafo">
-                <h3>Ningún mensaje fue <br> encontrado.</h3>
-                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
-            </div>
-            <div class="copiar">
-                <input type="button" class="btn-copiar" value="Copiar">
-            </div>
-            <div class="resultado">
-                <p class="texto-resultado"></p>
-            </div>
-        </section>
-   
-    </main>
 
-    <footer>
-        <img src="/imagenes/candado.jpg" alt="imagen2">
-        <p class="copyright">&copy Copyright Callenge - One Alura - Dayan C. T.G</p>
-    </footer>
+                <div class="contenedor-botones">
+                    <input type="button" class="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar">
+                </div>
+
+            </section>
+
+            <section class="seccion2">
+
+                <div class="contenedormunieco">
+                    <img src="Imagenes/Muñeco.svg" alt="muñico">
+                </div>
+
+                <div class="contenedor-parrafo">
+                    <h3>Nigún mensaje fue <br> encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" value="Copiar">
+                </div>
+
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p class="copyright">&copy Copyright Daya Cristy T.G - 2023</p>
+        </footer>
+
+        <script src="script.js"></script>
 
     </body>
-
-<script src="index.js"></script>
 
 </html>
